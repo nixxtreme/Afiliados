@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { LEADING_TRIVIA_CHARS } from '@angular/compiler/src/render3/view/template';
 import { Injectable } from '@angular/core';
+import { Afiliados } from '../interfaces/afiliados.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AfiliadosService {
 
-  afiliados: any[] = [];
+  afiliados: any = [];
   zonas: any[] = [];
   categorias: any[] = [];
 
@@ -22,9 +23,7 @@ export class AfiliadosService {
     this.http.get('https://negocio-8dbfd-default-rtdb.firebaseio.com/Afiliados.json')
       .subscribe((resp: any) => {
         this.afiliados = resp;
-        console.log(this.afiliados);
       });
-    console.log("Cargando afiliados");
   }
 
   cargar_zonas(){

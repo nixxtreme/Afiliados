@@ -1,12 +1,12 @@
 <div>
     <select class="custom-select" [(ngModel)]="buscarporlugar">
         <option value="">Seleccionar lugar</option>
-        <option *ngFor="let zonas of afi.zonas | filtrocinco" value="{{zonas.lugar}}">{{zonas.lugar}}</option>        
+        <option *ngFor="let zonas of afi.zonas | filtrocinco | filtrosiete" value="{{zonas.lugar}}">{{zonas.lugar}}</option>        
     </select>
     <br> <br>
     <select class="custom-select" [(ngModel)]="buscarporcategoria">
         <option value="">Categorías</option>
-        <option *ngFor="let categorias of afi.categorias | filtrocuatro" value="{{categorias.categorias}}">{{categorias.categorias}}</option>        
+        <option *ngFor="let categorias of afi.categorias | filtrocuatro | filtroseis" value="{{categorias.categorias}}">{{categorias.categorias}}</option>        
     </select>
     
     <br><br>
@@ -23,4 +23,4 @@
             </div>
         </div>
     </section>
-</div> 
+</div>  

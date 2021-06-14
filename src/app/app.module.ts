@@ -15,6 +15,7 @@ import { FiltrotresPipe } from './pipes/filtrotres.pipe';
 import { FiltrocuatroPipe } from './pipes/filtrocuatro.pipe';
 import { FiltrocincoPipe } from './pipes/filtrocinco.pipe';
 import { FiltroseisPipe } from './pipes/filtroseis.pipe';
+import { FiltrosietePipe } from './pipes/filtrosiete.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FiltroseisPipe } from './pipes/filtroseis.pipe';
     FiltrotresPipe,
     FiltrocuatroPipe,
     FiltrocincoPipe,
-    FiltroseisPipe
+    FiltroseisPipe,
+    FiltrosietePipe
   ],
   imports: [
     BrowserModule,
